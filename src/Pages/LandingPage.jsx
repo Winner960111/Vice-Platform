@@ -1,8 +1,7 @@
-import { Routes, Route } from "react-router-dom";
 import Header from "../Components/Header.jsx";
 const LandingPage = () => {
   return (
-    <div>
+    <div className="bg-[#111113]">
         <Header/>
     </div>
   );
