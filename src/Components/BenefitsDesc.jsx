@@ -1,21 +1,17 @@
-import ButtonBackgroundImg from "../assets/buttong-background.png";
+
 import GridLine from "../assets/grid-line1.png"
 import EllipseLine from "../assets/ellipse-line.png"
+import CustomButton from "./Button/CustomButton";
 
 
 const Descriptioncmp = ({ header, text }) => {
   return (
-    <div className="flex flex-col gap-[100px] p-16">
+    <div className="flex flex-col gap-[100px] p-16 justify-between">
       <div className="text-[60px] leading-tight">{header}</div>
       <div className="font-poppins font-normal text-3xl leading-[48px] tracking-normal">{text}</div>
-      <div>
-        <button
-          className="w-[283px] h-[87px] font-poppins font-normal text-[24px] leading-[36px] text-white flex items-center justify-center bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: `url(${ButtonBackgroundImg})` }}
-        >
-          Learn More
-        </button>
-      </div>
+      {/* <div> */}
+        <CustomButton text="Learn More"/>
+      {/* </div> */}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import DispersionGlassImg from "../assets/dispersionglass.png";
-import ButtonBackgroundImg from "../assets/buttong-background.png";
+import CustomButton from "./Button/CustomButton";
 
 const DiamondHands = () => {
   return (
@@ -7,12 +7,12 @@ const DiamondHands = () => {
       <div className="diamond-hands-images w-1/2 py-[300px]">
         <img
           src={DispersionGlassImg}
-          className="z-0  top-0"
+          className="z-0 top-0 animate-float "
           alt="dispersion glass"
         />
         <img
           src={DispersionGlassImg}
-          className="z-10 absolute top-[600px] left-[200px]"
+          className="z-10 absolute top-[600px] left-[200px] animate-float"
           alt="dispersion glass"
         />
       </div>
@@ -29,15 +29,8 @@ const DiamondHands = () => {
           </p>
         </div>
         <div className="diamond-hands-buttons flex gap-[34px] font-poppins">
-          <button
-            className="w-[283px] h-[87px] font-poppins font-normal text-[24px] leading-[36px] text-white flex items-center justify-center bg-no-repeat bg-cover bg-center"
-            style={{ backgroundImage: `url(${ButtonBackgroundImg})` }}
-          >
-            Join Now
-          </button>
-          <button className="relative w-[283px] h-[87px] rounded-[17px] text-white font-medium text-[24px] flex items-center justify-center bg-black border-2 border-cyan-500">
-            Learn More
-          </button>
+          <CustomButton text="Join Now"/>
+          <CustomButton text="Learn More"/>
         </div>
       </div>
     </div>
