@@ -1,4 +1,7 @@
+import Footer from "../Components/Footer.jsx";
 import Header from "../Components/Header.jsx";
+import HeroSection from "../Components/HeroSection.jsx";
+import Roadmap from "../Components/Roadmap.jsx";
 import Blockchain from "../Components/Blockchain.jsx";
 import Video from "../Components/Video.jsx";
 import DiamondHands from "../Components/DiamondHands.jsx";
@@ -16,6 +19,9 @@ const LandingPage = () => {
         <BenefitsDesc />
         <Feature />
         <Giveaways />
+        <Roadmap/>
+        <HeroSection/>
+        <Footer/>
     </div>
   );
 };
