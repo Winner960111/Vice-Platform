@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Experience, Reach, Engagement, Access } from "./icons/icon";
-
+import CustomButton from "../atoms/CustomButton";
 const Feature = () => {
   const [step, setStep] = useState(1);
 
@@ -11,28 +11,28 @@ const Feature = () => {
         <div className="flex">
           <div className="flex flex-col justify-between text-4xl h-[871px]">
             <div
-              className={`h-[218px] pt-[63px] pr-[47px] border-r-4 border-solid  ${
+              className={`h-[218px] pt-[63px] pr-[47px] border-r-8 border-solid  ${
                 step === 1 ? "border-[#e00b7c]" : "border-white"
               }`}
             >
               01
             </div>
             <div
-              className={`h-[218px] pt-[63px] pr-[47px] border-r-4 border-solid  ${
+              className={`h-[218px] pt-[63px] pr-[47px] border-r-8 border-solid  ${
                 step === 2 ? "border-[#e00b7c]" : "border-white"
               }`}
             >
               02
             </div>
             <div
-              className={`h-[218px] pt-[63px] pr-[47px] border-r-4 border-solid  ${
+              className={`h-[218px] pt-[63px] pr-[47px] border-r-8 border-solid  ${
                 step === 3 ? "border-[#e00b7c]" : "border-white"
               }`}
             >
               03
             </div>
             <div
-              className={`h-[218px] pt-[63px] pr-[47px] border-r-4 border-solid  ${
+              className={`h-[218px] pt-[63px] pr-[47px] border-r-8 border-solid  ${
                 step === 4 ? "border-[#e00b7c]" : "border-white"
               }`}
             >
@@ -102,8 +102,8 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[90px] bg-[url(button.png)] w-[283px] h-[87px] text-2xl flex justify-center items-center mb-[91px]">
-              Trade Now
+            <div className="mt-[90px] mb-[91px]">
+              <CustomButton text="Trade now" />
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Header from "../Components/Header.jsx";
 import Blockchain from "../Components/Blockchain.jsx";
 import Video from "../Components/Video.jsx";
 import DiamondHands from "../Components/DiamondHands.jsx";

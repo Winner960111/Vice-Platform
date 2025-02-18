@@ -18,7 +18,7 @@ const Giveaways = () => {
             <div
               onClick={() => setBorder("upcoming")}
               className={`w-[317px] text-[34px] ${
-                border === "upcoming" && "border-b-[#e00b7c] border-b-4"
+                border === "upcoming" && "border-b-[#e00b7c] border-b-8"
               }  border-solid flex justify-center pb-[34px]`}
             >
               Upcoming
@@ -26,7 +26,7 @@ const Giveaways = () => {
             <div
               onClick={() => setBorder("completed")}
               className={`w-[317px] text-[34px] border-solid ${
-                border === "completed" && "border-b-[#e00b7c] border-b-4"
+                border === "completed" && "border-b-[#e00b7c] border-b-8"
               }  flex justify-center pb-[34px]`}
             >
               Completed

@@ -1,5 +1,5 @@
 import Squares from '../atoms/Squares';
-
+import CustomButton from '../atoms/CustomButton';
 const Header = () => {
   return (
     <div className="w-full flex flex-col text-text_color">
@@ -11,7 +11,7 @@ const Header = () => {
                 <p className="plat">Platform</p>
                 <p className="doc">Docs</p>
             </div>
-            <div className="w-[283px] h-[87px] bg-[url('button_style.png')] bg-no-repeat text-[32px] flex justify-center items-center font-poppins mr-[132px]">Trade now</div>
+            <div className="flex justify-center items-center mr-[132px]"><CustomButton text="Trade now"/></div>
         </div>
         <div className="w-full h-[1377px] relative flex justify-center items-center">
             <Squares/>
