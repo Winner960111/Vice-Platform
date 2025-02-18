@@ -8,9 +8,13 @@ export default {
     extend: {
       colors:{
         back_color: "#111113",
-        text_color:"FFFFFF",
+        text_color:"#FFFFFF",
         purple_button: "#E00B7C"
-      }
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        Space_Grotesk: ['Space Grotesk', 'sans-serif'],
+      },
     },
   },
   plugins: [],
