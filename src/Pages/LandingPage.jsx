@@ -1,7 +1,7 @@
 import Header from "../Components/Header.jsx";
 const LandingPage = () => {
   return (
-    <div className="bg-[#111113]">
+    <div className="">
         <Header/>
     </div>
   );

@@ -1,7 +1,11 @@
 const Header = () => {
   return (
-    <div>
-      
+    <div className="flex flex-col">
+        <div className="head ">
+               
+        </div>
+        <div className="grid"></div>
+        <div className="brand"></div>      
     </div>
   );
 };
