@@ -1,7 +1,7 @@
 import logo_text from "../assets/img/VICE_White.png"
 export default function Footer() {
     return (
-      <footer className="bg-black w-full text-white px-[254.24px] py-12">
+      <footer className="bg-back_color w-full text-white px-[254.24px] py-12">
         <div className="mx-auto">
           <div className="flex justify-between items-start md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
             {/* Logo */}

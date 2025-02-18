@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card-background {
+    background-image: url('./assets/img/card-bg.jpg');
+    background-size: 100%;   
+    background-repeat: no-repeat;
+}

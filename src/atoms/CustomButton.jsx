@@ -1,5 +1,5 @@
 
-const CustomButton = ({ text, backgroundImage }) => (
+const CustomButton = ({ text }) => (
   <div className="group relative">
     <button
       className="w-[285px] h-[87px] desktop:w-[140px] desktop:h-[43px] font-poppins font-normal text-[24px] desktop:text-[12px] leading-[36px] text-white flex items-center justify-center bg-no-repeat bg-cover bg-center 

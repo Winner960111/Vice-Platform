@@ -49,7 +49,7 @@ export default function Roadmap() {
       <h1 className="text-center text-[100px] font-bold text-white mb-[114px]">$VICE ROADMAP</h1>
       <div className="w-full flex justify-between items-center mx-auto pb-[180px]">
         {phases.map((phase) => (
-          <div class={`relative p-1 rounded-[40px] ${activePhase === phase.id ? "bg-black" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
+          <div className={`relative p-1 rounded-[40px] ${activePhase === phase.id ? "bg-black" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
             <div
               key={phase.id}
               onClick={() => setActivePhase(phase.id)}
@@ -68,7 +68,6 @@ export default function Roadmap() {
                         <span className="text-[18px]">
                           <FaCircleCheck className={`${activePhase === phase.id ? "text-[#E00B7C] " : "text-[#1552F0]"} text-[18px] mr-5`}/>
                         </span>
-                        {/* <span className="mt-1.5 h-2 w-2 rounded-full bg-blue-500 flex-shrink-0" /> */}
                         <span className="text-[32px]">{item}</span>
                       </li>
                     ))}

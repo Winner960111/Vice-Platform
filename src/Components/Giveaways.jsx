@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GridView, ViewList } from "./icons/icon";
+import { GridView, ViewList } from "../atoms/icon";
 
 const data = [
   { img: "clock.png", text: "Rolex Submariner", price: "$50" },

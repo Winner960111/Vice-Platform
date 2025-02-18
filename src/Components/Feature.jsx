@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Experience, Reach, Engagement, Access } from "./icons/icon";
+import { Experience, Reach, Engagement, Access } from "../atoms/icon";
 import CustomButton from "../atoms/CustomButton";
 const Feature = () => {
   const [step, setStep] = useState(1);

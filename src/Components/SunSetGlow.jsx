@@ -1,6 +1,6 @@
 export default function SunsetGlow() {
     return (
-      <div className="relative flex items-center justify-center h-screen bg-black overflow-hidden">
+      <div className="relative flex items-center justify-center h-screen bg-back_color overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute w-full h-full bg-gradient-radial from-pink-500 via-purple-500 to-black opacity-70"></div>
   
