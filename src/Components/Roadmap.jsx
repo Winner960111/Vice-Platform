@@ -45,7 +45,7 @@ export default function Roadmap() {
   ]
 
   return (
-    <div className="bg-back_color w-full py-[254.24px]">
+    <div className="bg-back_color w-full px-[254.24px]">
       <h1 className="text-center text-[100px] font-bold text-white mb-[114px]">$VICE ROADMAP</h1>
       <div className="w-full flex justify-between items-center mx-auto pb-[180px]">
         {phases.map((phase) => (

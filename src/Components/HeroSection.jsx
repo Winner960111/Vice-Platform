@@ -35,7 +35,7 @@ export default function HeroSection() {
   
         {/* Content */}
         <div className="z-10 flex flex-col items-center justify-center px-4 py-[439px]">
-          <h1 className="text-center text-white text-3xl md:text-5xl lg:text-[100px] font-bold leading-tight mb-12 z-10">
+          <h1 className="text-center text-white text-3xl md:text-5xl lg:text-[100px] font-bold leading-tight mb-12">
             FUTURE OF DIGITAL WEALTH,
             <br />
             POWERED BY $VICE
