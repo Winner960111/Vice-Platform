@@ -6,9 +6,9 @@ import CustomButton from "./Button/CustomButton";
 
 const Descriptioncmp = ({ header, text }) => {
   return (
-    <div className="flex flex-col gap-[100px] p-16 justify-between">
-      <div className="text-[60px] leading-tight">{header}</div>
-      <div className="font-poppins font-normal text-3xl leading-[48px] tracking-normal">{text}</div>
+    <div className="flex flex-col gap-[100px] desktop:gap-[50px] p-16 desktop:p-8 justify-between">
+      <div className="text-[60px] desktop:text-[30px] leading-tight">{header}</div>
+      <div className="font-poppins font-normal text-3xl desktop:text-xl leading-[48px] tracking-normal">{text}</div>
       {/* <div> */}
         <CustomButton text="Learn More"/>
       {/* </div> */}
@@ -34,14 +34,14 @@ const BenefitsDesc = () => {
   
   return (
     <>
-      <div className=" flex flex-col gap-[180px] px-[400px] bg-[#111113] text-white py-[250px] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${GridLine})` }}>
+      <div className=" flex flex-col gap-[180px] px-[400px] py-[250px] desktop:px-[200px] desktop:py-[125px] bg-[#111113] text-white bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${GridLine})` }}>
         {/* <img src={EllipseLine} alt="color line" className="z-10" /> */}
-        <div className="flex justify-center font-space text-[100px]">
-          <p className="font-space font-medium text-[100px] leading-[57.2px] tracking-[-1.2px] text-center">
+        <div className="flex justify-center font-space">
+          <p className="font-space font-medium text-[100px] desktop:text-[50px] leading-[57.2px] tracking-[-1.2px] text-center">
             BENEFITS OF $VICE
           </p>
         </div>
-        <div className="flex flex-row gap-[200px]">
+        <div className="flex flex-row gap-[200px] desktop:gap-[100px]">
           {contents?.map((content, index) => {
             return (
               <Descriptioncmp
