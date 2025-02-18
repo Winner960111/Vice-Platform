@@ -1,7 +1,7 @@
 
 import GridLine from "../assets/grid-line1.png"
-import EllipseLine from "../assets/ellipse-line.png"
-import CustomButton from "./Button/CustomButton";
+// import EllipseLine from "../assets/ellipse-line.png"
+import CustomButton from "../atoms/CustomButton";
 
 
 const Descriptioncmp = ({ header, text }) => {

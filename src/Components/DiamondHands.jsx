@@ -1,17 +1,16 @@
-import DispersionGlassImg from "../assets/dispersionglass.png";
-import CustomButton from "./Button/CustomButton";
+import CustomButton from "../atoms/CustomButton";
 
 const DiamondHands = () => {
   return (
-    <div className="diamond-hands-container flex flex-row gap-48 px-[60px] relative justify-center items-center bg-black">
+    <div className="diamond-hands-container flex flex-row gap-48 px-[60px] relative justify-center items-center bg-back_color">
       <div className="diamond-hands-images w-1/2 py-[300px]">
         <img
-          src={DispersionGlassImg}
+          src="dispersionglass.png"
           className="z-0 top-0 animate-float desktop:w-[500px] desktop:h-[500px]"
           alt="dispersion glass"
         />
         <img
-          src={DispersionGlassImg}
+          src="dispersionglass.png"
           className="z-10 absolute top-[600px] desktop:top-[450px] left-[200px] desktop:left-[150px] desktop:w-[500px] desktop:h-[500px] animate-float"
           alt="dispersion glass"
         />

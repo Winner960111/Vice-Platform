@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 const Video = () => {
     const videoRef = useRef(null);
@@ -16,7 +16,7 @@ const Video = () => {
     };
 
     return (
-        <div className="mt-[276px] mb-[217px] flex justify-center">
+        <div className="mt-[276px] flex justify-center">
             <video
                 width="2326"
                 height="1150"
