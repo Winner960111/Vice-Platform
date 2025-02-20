@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 const Squares = ({
   direction = "up",
   speed = 0.5,
-  squareSize = 290.98,
+  squareSize = 125.89,
   hoverFillColor = "",
 }) => {
   const canvasRef = useRef(null);

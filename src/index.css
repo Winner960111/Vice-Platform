@@ -7,3 +7,10 @@
     background-size: 100%;   
     background-repeat: no-repeat;
 }
+
+.text-gradient {
+    background: linear-gradient(to right, #55A5EE, #E00B7C); /* Customize your gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }

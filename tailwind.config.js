@@ -31,7 +31,7 @@ export default {
         },
       },
       animation: {
-        float: "float 1s ease-in-out infinite",
+        float: "float 2s ease-in-out infinite",
       },
       keyframes: {
         floatUpDown: {

@@ -1,8 +1,8 @@
 export const Experience = (
   <svg
-    width="75"
-    height="94"
-    viewBox="0 0 75 94"
+    width="35"
+    height="42"
+    viewBox="0 0 35 42"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -37,9 +37,9 @@ export const Experience = (
 
 export const Reach = (
   <svg
-    width="75"
-    height="94"
-    viewBox="0 0 75 94"
+    width="35"
+    height="42"
+    viewBox="0 0 35 42"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -74,9 +74,9 @@ export const Reach = (
 
 export const Engagement = (
   <svg
-    width="75"
-    height="95"
-    viewBox="0 0 75 95"
+    width="35"
+    height="42"
+    viewBox="0 0 35 42"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -111,9 +111,9 @@ export const Engagement = (
 
 export const Access = (
   <svg
-    width="75"
-    height="94"
-    viewBox="0 0 75 94"
+    width="35"
+    height="42"
+    viewBox="0 0 35 42"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"

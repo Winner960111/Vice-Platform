@@ -45,30 +45,29 @@ export default function Roadmap() {
   ]
 
   return (
-    <div className="bg-back_color w-full px-[254.24px]">
-      <h1 className="text-center text-[100px] font-bold text-white mb-[114px]">$VICE ROADMAP</h1>
-      <div className="w-full flex justify-between items-center mx-auto pb-[180px]">
+    <div className="bg-back_color w-full mt-[127px] px-[100px]">
+      <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mt-9 mb-28">VICE ROADMAP</h1>
+      <div className="w-full flex justify-around items-center">
         {phases.map((phase) => (
-          <div className={`relative p-1 rounded-[40px] ${activePhase === phase.id ? "bg-black" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
+          <div className={`relative p-1 rounded-[20px] ${activePhase === phase.id ? "bg-back_color" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
             <div
               key={phase.id}
               onClick={() => setActivePhase(phase.id)}
-              className={`rounded-[40px] p-[60.85px] h-[980.4px] w-[729.6px] cursor-pointer transition-all duration-300 flex flex-col items-stretch
+              className={`rounded-[20px] pl-6 pr-3 pt-8 h-[465px] w-[345px] cursor-pointer transition-all duration-300 flex flex-col items-stretch 
                 ${activePhase === phase.id ? "card-background" : "bg-back_color" }`} >
                 <div className="text-center">
-                  <h2 className="text-[60px] font-bold text-white mt-10">{phase.title}</h2>
-                  <p className="text-gray-400 text-[18px]">{phase.date}</p>
+                  <h2 className="text-[32px] font-bold text-text_color mt-10">{phase.title}</h2>
+                  <p className="text-gray-400 text-[14px]">{phase.date}</p>
                 </div>
-                {/* Divider */}
-                <div className="h-px bg-white/70 my-8"></div>
-                <div className="flex-grow">
-                  <ul className="flex flex-col justify-between h-full pt-[20px]">
+                <div className="border-[#FFFFFF] border-b-[0.5px] border-solid mt-4 mx-4"></div>
+                <div className="flex-grow mt-12">
+                  <ul className="flex flex-col justify-between gap-y-2">
                     {phase.items.map((item, index) => (
-                      <li key={index} className="flex justify-start items-center text-white">
-                        <span className="text-[18px]">
-                          <FaCircleCheck className={`${activePhase === phase.id ? "text-[#E00B7C] " : "text-[#1552F0]"} text-[18px] mr-5`}/>
+                      <li key={index} className="flex items-start text-text_color">
+                        <span className="text-[12px]">
+                          <FaCircleCheck className={`${activePhase === phase.id ? "text-[#E00B7C] " : "text-[#1552F0]"} text-[12px]`}/>
                         </span>
-                        <span className="text-[32px]">{item}</span>
+                        <span className="text-[12px] ml-2 -mt-1">{item}</span>
                       </li>
                     ))}
                   </ul>
