@@ -13,10 +13,6 @@ const Descriptioncmp = ({ header, text }) => {
 
 const BenefitsDesc = () => {
 
-  const movePage = () => {
-    window.location.href = "https://www.mexc.com/price/vice";
-  };
-
   const contents = [
     {
       header: "Captivating Narrative",
@@ -65,7 +61,11 @@ const BenefitsDesc = () => {
                   );
                 })}
               </div>
-              <div className="my-[40px] flex justify-center" onClick={movePage}><CustomButton text={"Trade now"}/></div>
+              <div className="my-[40px] flex justify-center">
+                <a href="https://www.mexc.com/price/vice" target="_blank">
+                  <CustomButton text="Trade Now"/>
+                </a>
+              </div>
           </div>
       </div>
     </>

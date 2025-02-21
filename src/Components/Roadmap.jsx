@@ -53,7 +53,7 @@ export default function Roadmap() {
           <div className={`relative p-1 rounded-[20px] ${activePhase === phase.id ? "bg-back_color" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
             <div
               key={phase.id}
-              onClick={() => setActivePhase(phase.id)}
+              onMouseEnter={() => setActivePhase(phase.id)}
               className={`rounded-[20px] pl-6 pr-3 pt-8 h-[465px] w-[345px] cursor-pointer transition-all duration-300 flex flex-col items-stretch 
                 ${activePhase === phase.id ? "card-background" : "bg-back_color" }`} >
                 <div className="text-center">

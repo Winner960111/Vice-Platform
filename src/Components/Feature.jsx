@@ -2,10 +2,6 @@ import { Experience, Reach, Engagement, Access } from "../atoms/icon";
 import CustomButton from "../atoms/CustomButton";
 const Feature = () => {
 
-  const movePage = () => {
-    window.location.href = "https://www.mexc.com/price/vice";
-  };
-
   return (
     <div className="mt-[134px] pl-[100px] flex text-text_color items-center justify-between lg:flex-row flex-col" id="vice_feature">
       <div className="space-y-[63px]">
@@ -69,8 +65,10 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[31px] ml-[51px]" onClick={movePage}>
-              <CustomButton text="Trade now" />
+            <div className="mt-[31px] ml-[51px]">
+              <a href="https://www.mexc.com/price/vice" target="_blank">
+                  <CustomButton text="Trade Now"/>
+                </a>
             </div>
         </div>
       </div>
@@ -78,7 +76,7 @@ const Feature = () => {
         <img
           src="vice_usdt.png"
           alt="vice_usdt"
-          className="relative w-[720px] z-10 left-[-120px] animate-float"
+          className="relative w-[720px] z-10 left-[-120px] animate-float hover:animate-float_slow cursor-pointer"
         />
         <img
           src="feature_group.png"

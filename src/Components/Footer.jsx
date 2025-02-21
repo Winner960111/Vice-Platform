@@ -44,7 +44,7 @@ export default function Footer() {
                   <a href="#" className="block text-text_color/70 hover:text-text_color">
                     Telegram
                   </a>
-                  <a href="https://www.instagram.com/vicetoken/" className="block text-text_color/70 hover:text-text_color">
+                  <a href="https://www.instagram.com/vicetoken/" target="_blank" className="block text-text_color/70 hover:text-text_color">
                     Instagram
                   </a>
                   <a href="#" className="block text-text_color/70 hover:text-text_color">

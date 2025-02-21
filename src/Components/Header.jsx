@@ -1,11 +1,7 @@
 import Squares from '../atoms/Squares';
 import CustomButton from '../atoms/CustomButton';
 const Header = () => {
-
-  const movePage = () => {
-    window.location.href = "https://www.mexc.com/price/vice";
-  };
-
+  
   return (
     <div className="w-full flex flex-col text-text_color">
         <div className="head w-full flex justify-between items-center mt-[44px] mb-[52.26px]">
@@ -16,7 +12,11 @@ const Header = () => {
                 <p className="plat cursor-pointer">Platform</p>
                 <p className="doc cursor-pointer">Docs</p>
             </div>
-            <div className="flex justify-center items-center mr-[60px]" onClick={movePage}><CustomButton text="Trade now"/></div>
+            <div className="flex justify-center items-center mr-[60px]">
+              <a href="https://www.mexc.com/price/vice" target='_blank'>
+                <CustomButton text="Trade now"/>
+              </a>
+            </div>
         </div>
         <div className="w-full h-[629.74px] relative flex justify-center items-center">
             <Squares/>
