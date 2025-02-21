@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { FaCircleCheck } from "react-icons/fa6";
+
 export default function Roadmap() {
   const [activePhase, setActivePhase] = useState(2)
 
@@ -65,7 +66,7 @@ export default function Roadmap() {
                     {phase.items.map((item, index) => (
                       <li key={index} className="flex items-start text-text_color">
                         <span className="text-[12px]">
-                          <FaCircleCheck className={`${activePhase === phase.id ? "text-[#E00B7C] " : "text-[#1552F0]"} text-[12px]`}/>
+                          <FaCircleCheck className={`${activePhase === phase.id ? "text-[#E00B7C]" : "text-[#1552F0]"} text-[12px]`}/>
                         </span>
                         <span className="text-[12px] ml-2 -mt-1">{item}</span>
                       </li>
