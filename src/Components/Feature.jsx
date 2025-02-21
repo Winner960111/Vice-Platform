@@ -2,8 +2,12 @@ import { Experience, Reach, Engagement, Access } from "../atoms/icon";
 import CustomButton from "../atoms/CustomButton";
 const Feature = () => {
 
+  const movePage = () => {
+    window.location.href = "https://www.mexc.com/price/vice";
+  };
+
   return (
-    <div className="mt-[134px] pl-[100px] flex text-text_color items-center justify-between lg:flex-row flex-col">
+    <div className="mt-[134px] pl-[100px] flex text-text_color items-center justify-between lg:flex-row flex-col" id="vice_feature">
       <div className="space-y-[63px]">
         <p className="text-[48px] font-Space_Grotesk uppercase">How it works</p>
         <div className="flex flex-col">
@@ -65,7 +69,7 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[31px] ml-[51px]">
+            <div className="mt-[31px] ml-[51px]" onClick={movePage}>
               <CustomButton text="Trade now" />
             </div>
         </div>

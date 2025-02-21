@@ -1,6 +1,6 @@
 
 import CustomButton from "../atoms/CustomButton";
-
+import { motion } from "framer-motion";
 
 const Descriptioncmp = ({ header, text }) => {
   return (
@@ -12,6 +12,11 @@ const Descriptioncmp = ({ header, text }) => {
 };
 
 const BenefitsDesc = () => {
+
+  const movePage = () => {
+    window.location.href = "https://www.mexc.com/price/vice";
+  };
+
   const contents = [
     {
       header: "Captivating Narrative",
@@ -29,28 +34,39 @@ const BenefitsDesc = () => {
   
   return (
     <>
-        <div
-        className="w-full mt-[110px] bg-no-repeat bg-contain"
-          style={{ backgroundImage: "url('sun.png')" }}
-        >
-        <div className="w-full flex flex-col text-text_color pt-[300px]">
-            <p className="text-[48px] font-Space_Grotesk text-center">
-              BENEFITS OF $VICE
-            </p>
-            <div className="w-full flex flex-col md:flex-row items-center justify-start mt-[80px] md:gap-[10%] gap-[50px] px-[123px]">
+        <div className="w-full relative mt-[110px] z-0">
+          {/* Sun Rays (Animated Glow) */}
+          <div className="absolute top-0 left-0 w-full h-screen overflow-hidden -z-10">
+            <motion.img
+              src="sun.png" // Update path if necessary
+              alt="Sun Shine"
+              className="absolute top-0 transform -translate-x-1/2 w-full"
+              animate={{
+                opacity: [0.5, 1, 0.5], // Fading effect
+                scale: [1, 1.05, 1], // Slight pulsation
+              }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </div>
 
-              {contents?.map((content, index) => {
-                return (
-                  <Descriptioncmp
-                    key={index}
-                    header={content.header}
-                    text={content.text}
-                  />
-                );
-              })}
-            </div>
-            <div className="my-[40px] flex justify-center"><CustomButton text={"Trade now"}/></div>
-        </div>
+        <div className="w-full flex flex-col text-text_color pt-[300px]">
+              <p className="text-[48px] font-Space_Grotesk text-center">
+                BENEFITS OF $VICE
+              </p>
+              <div className="w-full flex flex-col md:flex-row items-center justify-start mt-[80px] md:gap-[10%] gap-[50px] px-[123px]">
+
+                {contents?.map((content, index) => {
+                  return (
+                    <Descriptioncmp
+                      key={index}
+                      header={content.header}
+                      text={content.text}
+                    />
+                  );
+                })}
+              </div>
+              <div className="my-[40px] flex justify-center" onClick={movePage}><CustomButton text={"Trade now"}/></div>
+          </div>
       </div>
     </>
   );

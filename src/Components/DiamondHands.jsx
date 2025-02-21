@@ -2,6 +2,11 @@ import CustomButton from "../atoms/CustomButton";
 
 const DiamondHands = () => {
 
+  const scroll_down = () => {
+    const target = document.getElementById("vice_feature");
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+
   const movePage = () => {
     window.location.href = "https://www.mexc.com/price/vice"
   }
@@ -23,7 +28,7 @@ const DiamondHands = () => {
           <div className="" onClick={movePage}>
             <CustomButton text="Trade Now"/>
           </div>
-          <div className="">
+          <div className="" onClick={scroll_down}>
           <CustomButton text="Learn More"/>
           </div>
         </div>
