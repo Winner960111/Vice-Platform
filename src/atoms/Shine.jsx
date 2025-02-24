@@ -5,7 +5,7 @@ export default function SunRayEffect() {
     <div className="relative w-full h-40 overflow-hidden">
       {/* Sun Rays (Animated Glow) */}
       <motion.img
-        src="sun.png" // Update the path if needed
+        src="light1.png" // Update the path if needed
         alt="Sun Shine"
         className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-4xl"
         initial={{ opacity: 0.5, scale: 1 }}

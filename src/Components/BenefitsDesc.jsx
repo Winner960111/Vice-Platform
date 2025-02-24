@@ -30,7 +30,9 @@ const BenefitsDesc = () => {
   
   return (
     <>
-        <div className="w-full relative mt-[110px] bg-no-repeat bg-cover bg-top bg-[url('sun.png')]">
+      <div
+        className="w-full relative mt-[110px] bg-no-repeat bg-cover bg-top"
+        style={{ backgroundImage: "url(/light1.png)" }}>
           {/* Sun Rays (Animated Glow) */}
           {/* <div className="relative w-full">
             <motion.img

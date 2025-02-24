@@ -12,7 +12,7 @@ import Buy from "../Components/Buy.jsx";
 import Visionaries from "../Components/Visionaries.jsx";
 const LandingPage = () => {
   return (
-    <div className="bg-center bg-[url('bg.png')] bg-cover bg-no-repeat bg-fixed">
+    <div className="bg-center bg-cover bg-no-repeat bg-fixed" style={{ backgroundImage: "url('/bg.png')" }}>
         <Header/>
         <Blockchain />
         <Video/>

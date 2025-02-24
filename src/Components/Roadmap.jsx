@@ -47,7 +47,9 @@ export default function Roadmap() {
   ]
 
   return (
-    <div className="w-full pb-[400px] px-[100px]  bg-no-repeat bg-bottom bg-[url('sun1.png')] bg-cover flex flex-col justify-center items-center">
+    <div
+      className="w-full pb-[400px] px-[100px]  bg-no-repeat bg-bottom bg-cover flex flex-col justify-center items-center"
+      style={{ backgroundImage: "url(/light2.png)" }}>
       
       <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mb-28">VICE ROADMAP</h1>
       <div className="w-full flex justify-around items-center flex-wrap pb-[60px]">
