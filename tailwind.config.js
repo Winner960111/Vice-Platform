@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      scrollBehavior: ['smooth'],
       colors: {
         back_color: "#111113",
         text_color:"#FFFFFF",

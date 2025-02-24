@@ -3,7 +3,8 @@ import CustomButton from "../atoms/CustomButton";
 const Feature = () => {
 
   return (
-    <div className="mt-[134px] pl-[100px] flex text-text_color items-center justify-between lg:flex-row flex-col" id="vice_feature">
+    <div
+      className="pt-[134px] pl-[100px] flex text-text_color items-center justify-between lg:flex-row flex-col bg-back_color" id="how" >
       <div className="space-y-[63px]">
         <p className="text-[48px] font-Space_Grotesk uppercase">How it works</p>
         <div className="flex flex-col">
@@ -14,11 +15,10 @@ const Feature = () => {
                   <p
                     className="font-bold text-[30px]"
                   >
-                    SEAMLESS USER EXPERIENCE
+                    Enterprise Grade, On-Chain
                   </p>
                   <p className="text-[14px] mt-[12px] leading-tight">
-                    Simple entry into daily, weekly and monthly competition
-                    pools via $VICE tokens.
+                    Simple entry into daily, weekly and monthly competition pools via $VICE tokens.
                   </p>
                 </div>
               </div>
@@ -31,8 +31,7 @@ const Feature = () => {
                     GLOBAL REACH
                   </p>
                   <p className="text-[14px] mt-[12px] leading-tight">
-                    All major wallets accepted, with global access to all
-                    competitions
+                  All major wallets accepted, with global access to all competitions
                   </p>
                 </div>
               </div>
@@ -45,8 +44,7 @@ const Feature = () => {
                     LONG-TERM ENGAGEMENT
                   </p>
                   <p className="text-[14px] mt-[12px] leading-tight">
-                    RewardPlay feature offering APYs and long-term competition
-                    pools.
+                    RewardPlay feature offering APYs and long-term competition pools.
                   </p>
                 </div>
               </div>
@@ -65,9 +63,12 @@ const Feature = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[31px] ml-[51px]">
+            <div className="mt-[31px] ml-[51px] flex gap-[20px]">
               <a href="https://www.mexc.com/price/vice" target="_blank">
                   <CustomButton text="Trade Now"/>
+                </a>
+                <a href="https://vice-io.gitbook.io/vice.io-docs/introduction/vice-overview/vice-platform" target="_blank">
+                  <CustomButton text="Learn More" />
                 </a>
             </div>
         </div>
@@ -81,7 +82,7 @@ const Feature = () => {
         <img
           src="feature_group.png"
           alt="feature_group"
-          className="absolute right-0 top-20 w-[1120px] md:h-[530px] h-[400px]"
+          className="absolute right-0 top-20 w-[1120px] md:h-[530px] sm:h-[300px]"
         />
       </div>
     </div>

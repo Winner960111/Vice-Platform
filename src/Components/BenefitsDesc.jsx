@@ -30,22 +30,21 @@ const BenefitsDesc = () => {
   
   return (
     <>
-        <div className="w-full relative mt-[110px] z-0">
+        <div className="w-full relative mt-[110px] bg-no-repeat bg-cover bg-top bg-[url('sun.png')]">
           {/* Sun Rays (Animated Glow) */}
-          <div className="absolute top-0 left-0 w-full h-screen overflow-hidden -z-10">
+          {/* <div className="relative w-full">
             <motion.img
-              src="sun.png" // Update path if necessary
+              src="sun.png"
               alt="Sun Shine"
-              className="absolute top-0 transform -translate-x-1/2 w-full"
+              className="w-full absolute top-0 -z-10"
               animate={{
                 opacity: [0.5, 1, 0.5], // Fading effect
-                scale: [1, 1.05, 1], // Slight pulsation
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            />
-          </div>
+            /> */}
 
-        <div className="w-full flex flex-col text-text_color pt-[300px]">
+          {/* </div> */}
+          <div className="w-full flex flex-col text-text_color pt-[300px]">
               <p className="text-[48px] font-Space_Grotesk text-center">
                 BENEFITS OF $VICE
               </p>
@@ -61,13 +60,13 @@ const BenefitsDesc = () => {
                   );
                 })}
               </div>
-              <div className="my-[40px] flex justify-center">
-                <a href="https://www.mexc.com/price/vice" target="_blank">
-                  <CustomButton text="Trade Now"/>
+              <div className="py-[40px] flex justify-center bg-back_color">
+                <a href="https://vice-io.gitbook.io/vice.io-docs/introduction/market-overview" target="_blank">
+                  <CustomButton text="Learn more"/>
                 </a>
               </div>
           </div>
-      </div>
+        </div>
     </>
   );
 };

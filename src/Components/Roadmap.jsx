@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { FaCircleCheck } from "react-icons/fa6";
+import CustomButton from "../atoms/CustomButton";
 
 export default function Roadmap() {
   const [activePhase, setActivePhase] = useState(2)
@@ -46,9 +47,10 @@ export default function Roadmap() {
   ]
 
   return (
-    <div className="bg-back_color w-full mt-[127px] px-[100px]">
-      <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mt-9 mb-28">VICE ROADMAP</h1>
-      <div className="w-full flex justify-around items-center">
+    <div className="w-full pb-[400px] px-[100px]  bg-no-repeat bg-bottom bg-[url('sun1.png')] bg-cover flex flex-col justify-center items-center">
+      
+      <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mb-28">VICE ROADMAP</h1>
+      <div className="w-full flex justify-around items-center flex-wrap pb-[60px]">
         {phases.map((phase) => (
           <div className={`relative p-1 rounded-[20px] ${activePhase === phase.id ? "bg-back_color" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
             <div
@@ -77,6 +79,10 @@ export default function Roadmap() {
           </div>
         ))}
       </div>
+
+      <a href="https://www.mexc.com/exchange/VICE_USDT?_from=search" target="_blank" className="">
+      <CustomButton text="Trade now" />
+      </a>
     </div>
   )
 }

@@ -8,25 +8,27 @@ const DiamondHands = () => {
   }
 
   return (
-    <div className="diamond-hands-container w-full flex xl:flex-row flex-col mt-[118.5px] relative justify-center items-center bg-back_color px-[40px] gap-[10%]">
-      <img 
-        src="dispersionglass.png"
-        className=" animate-float hover:animate-float_slow xl:w-[40%] w-[600px] p-10 xl:p-0 cursor-pointer"
-        alt="dispersion glass"
-      />
-      <div className="diamond-hands-description flex flex-col xl:w-[40%] w-[70%] text-text_color items-start leading-tight  xl:-mt-36">
-        <p className="text-[48px] uppercase font-Space_Grotesk">Diamond Hands,
-        Digital wealth</p>
-        <p className="text-[28px] font-poppins mt-[26px] mb-[40px]">
-          Transforming the crypto market with high-value prizes
-          like performance cars, luxury items, and VIP experiences.
-        </p>
-        <div className="diamond-hands-buttons flex gap-[34px] font-poppins">
-          <a href="https://www.mexc.com/price/vice" target="_blank">
-            <CustomButton text="Trade Now"/>
-          </a>
-          <div className="" onClick={scroll_down}>
-          <CustomButton text="Learn More"/>
+    <div className="diamond-hands-container w-full mt-36 ">
+      <div className="w-full flex flex-col lg:flex-row relative justify-center items-center pl-5 pr-36 gap-24">
+        <img 
+          src="dispersionglass.png"
+          className=" animate-float hover:animate-float_slow w-[600px] p-10 cursor-pointer"
+          alt="dispersion glass"
+        />
+        <div className="w-[800px] flex flex-col text-text_color leading-tight xl:-mt-36">
+          <p className="text-[48px] uppercase font-Space_Grotesk">Diamond Hands,
+          Digital wealth</p>
+          <p className="text-[28px] font-poppins mt-[26px] mb-[40px] tracking-tight">
+            Transforming the crypto market with high-value prizes
+            like performance cars, luxury items, and VIP experiences.
+          </p>
+          <div className="diamond-hands-buttons flex gap-[34px] font-poppins">
+            <a href="https://www.mexc.com/price/vice" target="_blank">
+              <CustomButton text="Trade Now"/>
+            </a>
+            <div className="" onClick={scroll_down}>
+            <CustomButton text="Learn More"/>
+            </div>
           </div>
         </div>
       </div>

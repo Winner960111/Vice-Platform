@@ -1,12 +1,12 @@
 
 export default function Footer() {
     return (
-      <footer className="bg-back_color w-full text-text_color px-[100px] py-12">
+      <footer className="bg-back_color w-full text-text_color px-[100px] py-24">
         <div className="mx-auto">
-          <div className="flex justify-between items-start md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
+          <div className="flex flex-col justify-between items-start md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
 
             {/* Logo */}
-            <div className="lg:col-span-4 w-[110px]">
+            <div className="lg:col-span-4 min-w-[110px] w-[110px]">
               <img
                 src='VICE_White 2.png'
                 alt="VICE"
@@ -18,10 +18,25 @@ export default function Footer() {
             </div>
   
             {/* Navigation Links */}
-            <nav className="lg:col-span-8 w-[664px]">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <nav className="flex justify-between items-start w-full mt-16 pr-20 lg:flex-row flex-col gap-10">
+              {/* column 0 */}
+              <div className="space-y-4 text-[14px]">
+                <a href="#" className="block hover:text-text_color">
+                  Token
+                </a>
+                <a href="https://vice-io.gitbook.io/vice.io-docs/usdvice-token/tokenomics" target="_blank" className="block text-text_color/70 hover:text-text_color">
+                  Tokenomics
+                </a>
+                <div className="block text-text_color/70 hover:text-text_color">
+                  Contract Address<br/>
+                  0xfd409bc96d126bc8a56479d4c7672015d539f96c
+                </div>
+              </div>
+              <div className="w-[50%] flex justify-between">
+
                 {/* Column 1 */}
                 <div className="space-y-4 text-[14px]">
+
                   <a href="#" className="block hover:text-text_color">
                     Home
                   </a>
@@ -47,7 +62,7 @@ export default function Footer() {
                   <a href="https://www.instagram.com/vicetoken/" target="_blank" className="block text-text_color/70 hover:text-text_color">
                     Instagram
                   </a>
-                  <a href="#" className="block text-text_color/70 hover:text-text_color">
+                  <a href="https://x.com/ViceTokenApp" target="_blank" className="block text-text_color/70 hover:text-text_color">
                     X
                   </a>
                   <a href="#" className="block text-text_color/70 hover:text-text_color">
@@ -60,7 +75,7 @@ export default function Footer() {
                   <a href="#" className="block hover:text-text_color">
                     FAQ
                   </a>
-                  <a href="#" className="block text-text_color/70 hover:text-text_color">
+                  <a href="https://vice-io.gitbook.io/vice.io-docs" target="_blank" className="block text-text_color/70 hover:text-text_color">
                     Help Center
                   </a>
                   <a href="#" className="block text-text_color/70 hover:text-text_color">
@@ -97,7 +112,7 @@ export default function Footer() {
             </div>
   
             {/* Copyright */}
-            <div className="text-gray-400 font-Space_Grotesk text-[14px]">&#169; 2025, VICE</div>
+            <div className="text-gray-400 font-Space_Grotesk text-[14px]">&#169; 2025 VICE Token</div>
           </div>
         </div>
       </footer>

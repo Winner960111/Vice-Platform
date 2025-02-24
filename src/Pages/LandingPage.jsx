@@ -6,20 +6,23 @@ import Blockchain from "../Components/Blockchain.jsx";
 import Video from "../Components/Video.jsx";
 import DiamondHands from "../Components/DiamondHands.jsx";
 import BenefitsDesc from "../Components/BenefitsDesc.jsx"
-import Feature from "../Components/Feature.jsx";
+import How from "../Components/How.jsx";
 import Giveaways from "../Components/Giveaways.jsx";
-    
+import Buy from "../Components/Buy.jsx";
+import Visionaries from "../Components/Visionaries.jsx";
 const LandingPage = () => {
   return (
-    <div className="bg-back_color">
+    <div className="bg-center bg-[url('bg.png')] bg-cover bg-no-repeat bg-fixed">
         <Header/>
         <Blockchain />
         <Video/>
         <DiamondHands />
         <BenefitsDesc />
-        <Feature />
+        <How />
         <Giveaways />
         <Roadmap/>
+        <Buy/>
+        <Visionaries />
         <HeroSection/>
         <Footer/>
     </div>

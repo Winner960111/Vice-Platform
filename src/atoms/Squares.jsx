@@ -57,7 +57,7 @@ const Squares = ({
           }
 
           ctx.strokeStyle = gradient;
-          ctx.lineWidth = 3
+          ctx.lineWidth = 1
           ctx.strokeRect(squareX, squareY, squareSize, squareSize);
         }
       }

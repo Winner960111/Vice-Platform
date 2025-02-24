@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomButton from "../atoms/CustomButton";
 const data = [
-  { img: "clock.png", text: "Rolex Submariner", price: "$50" },
-  { img: "clock.png", text: "Rolex Submariner", price: "$100" },
-  { img: "clock.png", text: "Rolex Submariner", price: "$150" },
+  { img: "clock.png", text: "Rolex Submariner", price: 50 },
+  { img: "clock.png", text: "Rolex Submariner", price: 100 },
+  { img: "clock.png", text: "Rolex Submariner", price: 50 },
 ];
 
 const data1 = [
@@ -34,10 +34,32 @@ const data1 = [
 ]
 const Giveaways = () => {
   const [border, setBorder] = useState("upcoming");
+  const [items, setItems] = useState(data);
+
+  const minusPrice = (index) => {
+    setItems((items) =>
+      items.map((item, i) => 
+        i === index ? { ...item, price: Math.max(0, item.price - 50) } : item
+      )
+    );
+  };
+  
+  const plusPrice = (index) => {
+    setItems((items) =>
+      items.map((item, i) => 
+        i === index ? { ...item, price: item.price + 50 } : item
+      )
+    );
+  };
+  
+  useEffect(() => {
+    console.log("Updated Prices:", items.map((item) => item.price));
+  }, [items]);
+
   return (
-    <div className="text-white pt-[75px]">
+    <div className="text-white pt-[75px] bg-back_color" id="giveaway">
       <p className="text-[48px] font-Space_Grotesk flex justify-center">GIVEAWAYS</p>
-      <div className="px-[100px] py-[60px]">
+      <div className="sm:px-[100px] py-[60px]">
         
           <div className="flex items-start h-[89px] ">
             <div
@@ -59,9 +81,9 @@ const Giveaways = () => {
           </div>
         {border === "upcoming" ? (
          <div className="py-[24px]">
-          {data.map((item, index) => (
-            <div key={index} className="w-full rounded-[20px] mb-[8px] bg-[#202020] min-w-[500px]">
-              <div className="pl-[14px] pt-[12px] pb-[5px] pr-[40px] flex items-center">
+          {items.map((item, index) => (
+            <div key={index} className="w-full rounded-[20px] mb-[8px] bg-[#202020]">
+                <div className="pl-[14px] pt-[12px] pb-[5px] pr-[40px] flex items-center sm:flex-row flex-col">
                 <img
                   src={item.img}
                   alt="clock"
@@ -75,14 +97,13 @@ const Giveaways = () => {
                       </p>
                       <p className="text-[24px]">{item.text}</p>
                     </div>
-                    <div className="bg-gradient-to-r from-[#55A5EE] to-[#E00B7C] min-w-[97px] h-[38px] rounded-[40px] flex justify-center items-center">
-                      <p className="text-[14px] font-bold px-2 py-1">1 Ticket</p>
+                    <div className="bg-gradient-to-r from-[#55A5EE] to-[#E00B7C] min-w-[110px] h-[38px] rounded-[40px] flex justify-center items-center gap-1">
+                      <p className="text-white font-Space_Grotesk font-bold text-lg cursor-pointer" onClick={()=>minusPrice(index)}>-</p>
+                      <p className="text-sm font-bold px-2 py-1">VICE</p>
+                      <p className="text-white font-Space_Grotesk font-bold text-lg cursor-pointer" onClick={()=>plusPrice(index)}>+</p>
                     </div>
-                    <p className="font-bold text-[32px] min-w-10">{item.price}</p>
-                    <div className="space-y-[8px]">
-                      <CustomButton text={"Enter now"} />
+                    <p className="font-bold text-[32px] min-w-20">${item.price}</p>
                       <CustomButton text={"More info"} />
-                    </div>
                   </div>
                 </div>
               </div>
