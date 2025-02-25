@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div className="relative w-full flex flex-col text-text_color">
-        <div className="head w-full flex justify-between items-center py-8 fixed top-0 z-50 bg-back_color">
+        <div className="head w-full flex justify-between items-center py-8 sticky top-0 z-50 bg-back_color">
             <a href="#">
               <img src = "VICE_White 2.png" alt = "logo" className="min-w-[110px] w-[110px] left-[40px] top-[44px] ml-[48px]" />
             </a>
@@ -24,7 +24,7 @@ const Header = () => {
               </a>
             </div>
         </div>
-        <div className="w-full h-[629.74px] relative flex justify-center items-center mt-32">
+        <div className="w-full h-[629.74px] relative flex justify-center items-center">
             <Squares/>
             <img src='Brand.png' className="brand absolute w-[524px]" />
             <div className="absolute bg-black w-full h-[629.74px] opacity-40"></div>

@@ -13,7 +13,8 @@ import Visionaries from "../Components/Visionaries.jsx";
 
 const LandingPage = () => {
   return (
-    <div className="bg-center bg-cover bg-no-repeat bg-fixed" style={{ backgroundImage: "url('/bg.png')" }}>
+    <div className="w-full flex justify-center">
+    <div className="relative w-full bg-center bg-cover bg-no-repeat bg-fixed  max-w-[1600px]" style={{ backgroundImage: "url('/bg.png')" }}>
         <Header/>
         <Blockchain />
         <Video/>
@@ -26,6 +27,7 @@ const LandingPage = () => {
         <Visionaries />
         <HeroSection/>
         <Footer/>
+    </div>
     </div>
   );
 };
