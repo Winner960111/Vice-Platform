@@ -16,7 +16,7 @@ const Feature = () => {
                   >
                     Enterprise Grade, On-Chain
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  <p className="text-[14px] mt-[12px] leading-tight w-[80%]">
                   Host secure, scalable daily, weekly, and monthly competition pools using advanced blockchain infrastructure.
                   </p>
                 </div>
@@ -29,7 +29,7 @@ const Feature = () => {
                   >
                     Accelerate Global Reach
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  <p className="text-[14px] mt-[12px] leading-tight w-[80%]">
                   Attract worldwide participation by accepting multiple
                     cryptocurrencies, expanding your brand&apos;s market presence.
                   </p>
@@ -43,7 +43,7 @@ const Feature = () => {
                   >
                     Drive Fan Engagement
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  <p className="text-[14px] mt-[12px] leading-tight w-[80%]">
                   Leverage RewardPlay APIs to sustain user interest and foster
                   long-term loyalty through continuous incentives.
                   </p>
@@ -57,7 +57,7 @@ const Feature = () => {
                   >
                     Unlock NFT Exclusivity
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  <p className="text-[14px] mt-[12px] leading-tight w-[80%]">
                   Offer premium, members-only competitions and perks via NFT-based passes, elevating brand prestige and community devotion.
                   </p>
                 </div>
