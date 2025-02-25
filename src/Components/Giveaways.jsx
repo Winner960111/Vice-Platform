@@ -6,36 +6,11 @@ const data = [
   { img: "clock.png", text: "Rolex Submariner", price: 50 },
 ];
 
-const data1 = [
-  {
-    year: "2025",
-    address: "0x9c493cd702651054c4b8672bde3b68d9083f1a11",
-    username: "Username",
-    prize: "$1000 $VICE",
-  },
-  {
-    year: "2025",
-    address: "0x9c493cd702651054c4b8672bde3b68d9083f1a11",
-    username: "Username",
-    prize: "Rolex Submariner",
-  },
-  {
-    year: "2025",
-    address: "0x9c493cd702651054c4b8672bde3b68d9083f1a11",
-    username: "Username",
-    prize: "2025 Aston Martin Vanquish",
-  },
-  {
-    year: "2025",
-    address: "0x9c493cd702651054c4b8672bde3b68d9083f1a11",
-    username: "Username",
-    prize: "$30,000 $VICE",
-  },
-]
+
 const Giveaways = () => {
   const [border, setBorder] = useState("upcoming");
   const [items, setItems] = useState(data);
-
+  const [sheetData, setSheetData] = useState([]);
   const minusPrice = (index) => {
     setItems((items) =>
       items.map((item, i) => 
@@ -52,6 +27,21 @@ const Giveaways = () => {
     );
   };
   
+  const API_KEY = import.meta.env.VITE_GOOGLESHEET_API_KEY;
+  const SHEET_ID = "1p-1R2_naFhjlGys4IgMHhHJf5T_vjJ1o27EJZHTvSfM";
+  const RANGE = "VICE GIVEAWAY WINNERS!A3:C"; // Adjust based on your data range
+
+  useEffect(() => {
+    fetch(
+      `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`
+    )
+      .then((response) => response.json())
+      .then((result) => {
+        console.log("this is value========>",result.values);
+        setSheetData(result.values);
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
 
   return (
     <div className="text-white pt-[75px] bg-back_color" id="giveaway">
@@ -117,13 +107,13 @@ const Giveaways = () => {
               <p className="w-28">Username</p>
               <p className="">Prize</p>
             </div>
-          {data1.map((item, index) => (
+          {sheetData.map((item, index) => (
             <div key={index} className="w-full rounded-[20px] mb-[8px] bg-[#202020] mt-6 min-w-[1000px]">
               <div className="title flex items-center text-text_color py-7 px-[34px] gap-[8%] text-[14px] font-bold font-poppins">
-                <p className="min-w-10">{item.year}</p>
-                <p className="min-w-96">{item.address}</p>
-                <p className="min-w-28">{item.username}</p>
-                <p className="text-2xl text-gradient leading-tight">{item.prize}</p>
+                <p className="min-w-10">2025</p>
+                <p className="min-w-96">{item[0]}</p>
+                <p className="min-w-28">username</p>
+                <p className="text-gradient leading-tight">{item[1]}</p>
             </div>
             </div>
           ))}

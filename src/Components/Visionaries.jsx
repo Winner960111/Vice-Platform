@@ -13,8 +13,8 @@ const Photo = ({ imageUrl, name, role }) => {
 const Visionaries = () => {
     return(
         <>
-            <div className="w-full flex flex-col items-start justify-center px-20 md:px-60 mt-36">
-                <p className="text-[48px] font-Space_Grotesk uppercase text-text_color">MEET OUR VISIONARIES</p>
+            <div className="w-full flex flex-col items-center justify-center px-20 md:px-60 mt-36">
+                <p className="text-[48px] font-Space_Grotesk uppercase text-text_color text-center">MEET OUR VISIONARIES</p>
                 <div className="flex justify-center items-start mt-20 gap-10 font-poppins flex-wrap lg:flex-nowrap">
                     <Photo
                     imageUrl="1.png"
