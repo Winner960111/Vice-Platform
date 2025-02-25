@@ -73,7 +73,7 @@ const Blockchain = () => {
           <TokenSlide href="#" logoSrc="logo5.png" />
         </Carousel>
       </div>
-      <div className="flex flex-col justify-center items-center px-36">
+      <div className="flex flex-col justify-center items-center px-10 md:px-36">
         <p className="w-full flex font-Space_Grotesk text-[70px] text-text_color mt-[120px] mb-[34px] uppercase  leading-tight tracking-tight">
           future of digital giveaways, powered by BLOCKCHAIN
         </p>

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { FaCircleCheck } from "react-icons/fa6";
 import CustomButton from "../atoms/CustomButton";
+import { motion } from "framer-motion";
 
 export default function Roadmap() {
   const [activePhase, setActivePhase] = useState(2)
@@ -48,9 +49,18 @@ export default function Roadmap() {
 
   return (
     <div
-      className="w-full pb-[400px] px-[100px]  bg-no-repeat bg-bottom bg-cover flex flex-col justify-center items-center"
-      style={{ backgroundImage: "url(/light2.png)" }}>
-      
+      className="w-full pb-[400px] px-[100px] relative bg-no-repeat bg-bottom bg-cover flex flex-col justify-center items-center z-20"
+      style={{ backgroundImage: "url(/back-light2.png)" }}>
+        {/* Sun Rays (Animated Glow) */}
+            <motion.img
+              src="light2.png"
+              alt="Sun Shine"
+              className="w-full absolute bottom-[-30px] -z-10"
+              animate={{
+                opacity: [0.5, 1, 0.5], // Fading effect
+              }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            />
       <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mb-28">VICE ROADMAP</h1>
       <div className="w-full flex justify-around items-center flex-wrap pb-[60px]">
         {phases.map((phase, idx) => (

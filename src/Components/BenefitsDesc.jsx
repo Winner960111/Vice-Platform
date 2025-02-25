@@ -31,22 +31,21 @@ const BenefitsDesc = () => {
   return (
     <>
       <div
-        className="w-full relative mt-[110px] bg-no-repeat bg-cover bg-top"
-        style={{ backgroundImage: "url(/light1.png)" }}
+        className="w-full relative mt-[110px] bg-no-repeat bg-cover bg-top z-20"
+        style={{ backgroundImage: "url(/back-light1.png)" }}
       >
         {/* Sun Rays (Animated Glow) */}
-        {/* <div className="relative w-full">
+        <div className="relative w-full">
             <motion.img
-              src="sun.png"
+              src="light1.png"
               alt="Sun Shine"
-              className="w-full absolute top-0 -z-10"
+              className="w-full absolute top-[-30px] -z-10"
               animate={{
                 opacity: [0.5, 1, 0.5], // Fading effect
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            /> */}
-
-        {/* </div> */}
+            />
+        </div>
         <div className="w-full flex flex-col text-text_color pt-[300px]">
           <p className="text-[48px] font-Space_Grotesk text-center">
             BENEFITS OF $VICE
