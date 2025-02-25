@@ -8,11 +8,11 @@ const Header = () => {
 
   return (
     <div className="relative w-full flex flex-col text-text_color">
-        <div className="head w-full flex justify-between items-center py-4 fixed top-0 z-50 bg-back_color">
+        <div className="head w-full flex justify-between items-center py-8 fixed top-0 z-50 bg-back_color">
             <a href="#">
               <img src = "VICE_White 2.png" alt = "logo" className="min-w-[110px] w-[110px] left-[40px] top-[44px] ml-[48px]" />
             </a>
-            <div className="title hidden md:flex text-[14px] font-poppins">
+            <div className="title hidden md:flex text-[14px] font-poppins font-bold">
                 <a href='#'><p className={`${status == 0 ? "border-solid border-b-4 border-white":""} cursor-pointer p-5`} onClick={()=>setStatus(0)}>Home</p></a>
                 <a href='#giveaway'><p className={`${status == 1 ? "border-solid border-b-4 border-white":""} cursor-pointer p-5`} onClick={()=>setStatus(1)}>Giveaways</p></a>
                 <a href='#how'><p className={`${status == 2 ? "border-solid border-b-4 border-white":""} cursor-pointer p-5`} onClick={()=>setStatus(2)}>Platform</p></a>
@@ -24,7 +24,7 @@ const Header = () => {
               </a>
             </div>
         </div>
-        <div className="w-full h-[629.74px] relative flex justify-center items-center">
+        <div className="w-full h-[629.74px] relative flex justify-center items-center mt-32">
             <Squares/>
             <img src='Brand.png' className="brand absolute w-[524px]" />
             <div className="absolute bg-black w-full h-[629.74px] opacity-40"></div>

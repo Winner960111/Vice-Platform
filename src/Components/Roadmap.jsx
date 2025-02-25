@@ -53,10 +53,10 @@ export default function Roadmap() {
       
       <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mb-28">VICE ROADMAP</h1>
       <div className="w-full flex justify-around items-center flex-wrap pb-[60px]">
-        {phases.map((phase) => (
-          <div className={`relative p-1 rounded-[20px] ${activePhase === phase.id ? "bg-back_color" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
+        {phases.map((phase, idx) => (
+          <div key={idx} className={`relative p-1 rounded-[20px] ${activePhase === phase.id ? "bg-back_color" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
             <div
-              key={phase.id}
+              // key={phase.id}
               onMouseEnter={() => setActivePhase(phase.id)}
               className={`rounded-[20px] pl-6 pr-3 pt-8 h-[465px] w-[345px] cursor-pointer transition-all duration-300 flex flex-col items-stretch 
                 ${activePhase === phase.id ? "card-background" : "bg-back_color" }`} >

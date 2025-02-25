@@ -1,6 +1,6 @@
 const Photo = ({ imageUrl, name, role }) => {
     return(
-        <div className="flex flex-col items-start w-[230px]">
+        <div className="flex flex-col items-start w-[200px]">
             <img src={imageUrl} alt="" className="w-full" />
             <p className="text-[14px] font-Space_Grotesk text-text_color mt-4 font-bold">{name}</p>
             <p className="text-[12px] font-Space_Grotesk text-text_color mt-2">
@@ -15,7 +15,7 @@ const Visionaries = () => {
         <>
             <div className="w-full flex flex-col items-start justify-center px-20 md:px-60 mt-36">
                 <p className="text-[48px] font-Space_Grotesk uppercase text-text_color">MEET OUR VISIONARIES</p>
-                <div className="flex justify-center items-start mt-20 gap-16 font-poppins flex-wrap">
+                <div className="flex justify-center items-start mt-20 gap-10 font-poppins flex-wrap lg:flex-nowrap">
                     <Photo
                     imageUrl="1.png"
                     name="ADAM PEARSALL"

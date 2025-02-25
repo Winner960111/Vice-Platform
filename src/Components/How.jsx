@@ -1,4 +1,3 @@
-import { Experience, Reach, Engagement, Access } from "../atoms/icon";
 import CustomButton from "../atoms/CustomButton";
 const Feature = () => {
 
@@ -10,55 +9,56 @@ const Feature = () => {
         <div className="flex flex-col">
           <div className="flex flex-col items-start gap-[33px]">
               <div className="flex items-start gap-[20px]">
-                {Experience}
+                <img src="icon1.png" alt="" />
                 <div>
                   <p
                     className="font-bold text-[30px]"
                   >
                     Enterprise Grade, On-Chain
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight">
-                    Simple entry into daily, weekly and monthly competition pools via $VICE tokens.
+                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  Host secure, scalable daily, weekly, and monthly competition pools using advanced blockchain infrastructure.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-[20px]">
-                {Reach}
+                <img src="icon2.png" alt="" />
                 <div>
                   <p
                     className="font-bold text-[30px]"
                   >
-                    GLOBAL REACH
+                    Accelerate Global Reach
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight">
-                  All major wallets accepted, with global access to all competitions
+                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  Attract worldwide participation by accepting multiple
+                    cryptocurrencies, expanding your brand&apos;s market presence.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-[20px]">
-                {Engagement}
+                <img src="icon3.png" alt="" />
                 <div>
                   <p
                     className="font-bold text-[30px]"
                   >
-                    LONG-TERM ENGAGEMENT
+                    Drive Fan Engagement
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight">
-                    RewardPlay feature offering APYs and long-term competition pools.
+                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  Leverage RewardPlay APIs to sustain user interest and foster
+                  long-term loyalty through continuous incentives.
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-[20px]">
-                {Access}
+                <img src="icon4.png" alt="" />
                 <div>
                   <p
                     className="font-bold text-[30px]"
                   >
-                    EXCLUSIVE ACCESS
+                    Unlock NFT Exclusivity
                   </p>
-                  <p className="text-[14px] mt-[12px] leading-tight">
-                    NFT-based PlayPass for entry to all competitions and
-                    exclusive events.
+                  <p className="text-[14px] mt-[12px] leading-tight w-[600px]">
+                  Offer premium, members-only competitions and perks via NFT-based passes, elevating brand prestige and community devotion.
                   </p>
                 </div>
               </div>

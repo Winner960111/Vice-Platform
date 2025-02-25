@@ -52,9 +52,6 @@ const Giveaways = () => {
     );
   };
   
-  useEffect(() => {
-    console.log("Updated Prices:", items.map((item) => item.price));
-  }, [items]);
 
   return (
     <div className="text-white pt-[75px] bg-back_color" id="giveaway">
@@ -92,18 +89,21 @@ const Giveaways = () => {
                 <div className="grow">
                   <div className="flex flex-col lg:flex-row justify-between items-center ml-[13px] gap-[10%]">
                     <div className="space-y-[8px]">
-                      <p className="text-[14px] text-[#b9b9b9]">
+                      <p className="text-[12px] text-[#b9b9b9]">
                         COMING SOON
                       </p>
-                      <p className="text-[24px]">{item.text}</p>
+                      <p className="text-[20px]">{item.text}</p>
                     </div>
                     <div className="bg-gradient-to-r from-[#55A5EE] to-[#E00B7C] min-w-[110px] h-[38px] rounded-[40px] flex justify-center items-center gap-1">
                       <p className="text-white font-Space_Grotesk font-bold text-lg cursor-pointer" onClick={()=>minusPrice(index)}>-</p>
-                      <p className="text-sm font-bold px-2 py-1">VICE</p>
+                      <p className="text-[12px] font-bold px-2 py-1">VICE</p>
                       <p className="text-white font-Space_Grotesk font-bold text-lg cursor-pointer" onClick={()=>plusPrice(index)}>+</p>
                     </div>
-                    <p className="font-bold text-[32px] min-w-20">${item.price}</p>
-                      <CustomButton text={"More info"} />
+                    <div className="flex flex-col justify-center items-start">
+                      <p className="text-[12px] text-[#D9D9D9]">ENTRY COST</p>
+                      <p className="font-bold text-[20px] min-w-20">${item.price}</p>
+                    </div>
+                    <CustomButton text={"More info"} />
                   </div>
                 </div>
               </div>

@@ -10,6 +10,7 @@ import How from "../Components/How.jsx";
 import Giveaways from "../Components/Giveaways.jsx";
 import Buy from "../Components/Buy.jsx";
 import Visionaries from "../Components/Visionaries.jsx";
+
 const LandingPage = () => {
   return (
     <div className="bg-center bg-cover bg-no-repeat bg-fixed" style={{ backgroundImage: "url('/bg.png')" }}>

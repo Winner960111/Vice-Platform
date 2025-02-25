@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         space: ["Space Grotesk"],
-        poppins: ['Poppins', 'sans-serif'],
+        poppins: ['Poppins'],
         Space_Grotesk: ['Space Grotesk', 'sans-serif'],
       },
       screens: {
