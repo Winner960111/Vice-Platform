@@ -50,7 +50,7 @@ export default function Roadmap() {
   return (
     <div
       className="w-full pb-[400px] px-[100px] relative bg-no-repeat bg-bottom bg-cover flex flex-col justify-center items-center z-20"
-      style={{ backgroundImage: "url(/back-light2.png)" }}>
+      style={{ backgroundImage: "url(/back-light2.png)" }} id="roadmap">
         {/* Sun Rays (Animated Glow) */}
             <motion.img
               src="light2.png"

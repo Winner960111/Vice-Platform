@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import CustomButton from "../atoms/CustomButton";
 const data = [
   { img: "clock.png", text: "Rolex Submariner", price: 50 },
-  { img: "clock.png", text: "Rolex Submariner", price: 100 },
-  { img: "clock.png", text: "Rolex Submariner", price: 50 },
+  { img: "car.png", text: "2025 Lamborghini Revuelto", price: 100 },
+  { img: "picture.png", text: "Tomorrowland All Access Pass", price: 50 },
 ];
 
 
@@ -78,11 +78,12 @@ const Giveaways = () => {
                 />
                 <div className="grow">
                   <div className="flex flex-col lg:flex-row justify-between items-center ml-[13px] gap-[10%]">
-                    <div className="space-y-[8px]">
+                    <div className="space-y-[8px] w-80">
                       <p className="text-[12px] text-[#b9b9b9]">
                         COMING SOON
                       </p>
                       <p className="text-[20px]">{item.text}</p>
+                      <p className="text-[12px] text-[#b9b9b9]">56 ENTRIES</p>
                     </div>
                     <div className="bg-gradient-to-r from-[#55A5EE] to-[#E00B7C] min-w-[110px] h-[38px] rounded-[40px] flex justify-center items-center gap-1">
                       <p className="text-white font-Space_Grotesk font-bold text-lg cursor-pointer" onClick={()=>minusPrice(index)}>-</p>
@@ -104,7 +105,6 @@ const Giveaways = () => {
             <div className="title flex items-center text-[#B9B9B9] text-[14px] px-[34px] gap-[8%] font-poppins min-w-[1000px]">
               <p className="w-10">Year</p>
               <p className="w-96">Address</p>
-              <p className="w-28">Username</p>
               <p className="">Prize</p>
             </div>
           {sheetData.map((item, index) => (
@@ -112,7 +112,6 @@ const Giveaways = () => {
               <div className="title flex items-center text-text_color py-7 px-[34px] gap-[8%] text-[14px] font-bold font-poppins">
                 <p className="min-w-10">2025</p>
                 <p className="min-w-96">{item[0]}</p>
-                <p className="min-w-28">username</p>
                 <p className="text-gradient leading-tight">{item[1]}</p>
             </div>
             </div>

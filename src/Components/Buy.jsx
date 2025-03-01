@@ -14,7 +14,7 @@ const Buy = () => {
   }, []);
 
   return (
-    <div className="w-full relative mt-[-50px] flex flex-col items-center justify-center">
+    <div className="w-full relative mt-[-50px] flex flex-col items-center justify-center" id="doc">
       <img src="Bull1.png" alt="bull" className="absolute top-0 left-0" />
       <img src="Bull.png" alt="bull" className="absolute top-0 right-0" />
       <div className="w-full flex flex-col items-center justify-center text-text_color tracking-tight leading-tight mt-72 mb-16 z-10">
@@ -35,7 +35,9 @@ const Buy = () => {
       </div>
       <div className="flex justify-center items-center p-10 lg:flex-row flex-col gap-32">
         <div className="flex flex-col items-center justify-center">
-          <img src="Chart.png" alt="" className="mb-12" />
+          <div className="relative mb-12 font-Space_Grotesk z-50">
+            <div className="absolute w-32 h-32 text-lg flex justify-center items-center text-text_color font-bold rounded-full bg-gradient-to-bl from-white via-[#E00B7C] to-[#746ED5]">25%</div>
+          </div>
           <a
             href="https://vice-io.gitbook.io/vice.io-docs/usdvice-token/token-tech-info"
             target="_blank"

@@ -15,16 +15,16 @@ const Descriptioncmp = ({ header, text }) => {
 const BenefitsDesc = () => {
   const contents = [
     {
-      header: "Captivating Narrative",
-      text: "Merging the passion for supercars, luxury items, and crypto, we are poised to captivate a highly engaged audience.",
+      header: "Blockchain Fairness",
+      text: "Every transaction is on-chain, ensuring full transparency. Built for Web3 users, by Web3 enthusiasts.",
     },
     {
-      header: "Unrivaled Rewards",
-      text: "Daily, weekly and monthly giveaways of performance cars, luxury items, and VIP experiences, delivering immense value to users.",
+      header: "No More Scams",
+      text: "No More Scams - Eliminate fake giveaways and rug pulls with decentralized verification.",
     },
     {
-      header: "Targeted Marketing",
-      text: "Leveraging our extensive network of creators and partners in the automotive and luxury spaces to drive engagement and entries.",
+      header: "Global & Borderless",
+      text: "Global & Borderless - Participate from anywhere, instantly, with entries via crypto payments.",
     },
   ];
 
@@ -36,19 +36,19 @@ const BenefitsDesc = () => {
       >
         {/* Sun Rays (Animated Glow) */}
         <div className="relative w-full">
-            <motion.img
-              src="light1.png"
-              alt="Sun Shine"
-              className="w-full absolute top-[-30px] -z-10"
-              animate={{
-                opacity: [0.5, 1, 0.5], // Fading effect
-              }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            />
+          <motion.img
+            src="light1.png"
+            alt="Sun Shine"
+            className="w-full absolute top-[-30px] -z-10"
+            animate={{
+              opacity: [0.5, 1, 0.5], // Fading effect
+            }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          />
         </div>
         <div className="w-full flex flex-col text-text_color pt-[300px]">
           <p className="text-[48px] font-Space_Grotesk text-center">
-            BENEFITS OF $VICE
+            WHY $VICE
           </p>
           <div className="w-full flex flex-col md:flex-row items-center justify-start mt-[80px] md:gap-[10%] gap-[50px] px-[123px]">
             {contents?.map((content, index) => {
