@@ -51,7 +51,7 @@ const Giveaways = () => {
           <div className="flex items-start h-[89px] ">
             <div
               onClick={() => setBorder("upcoming")}
-              className={`w-[164px] text-[14px] cursor-pointer ${
+              className={`w-[164px] text-[14px] cursor-pointer font-bold ${
                 border === "upcoming" && "border-b-[#e00b7c] text-[#e00b7c] border-b-[1px]"
               }  border-solid flex justify-center pb-[17px]`}
             >
@@ -59,7 +59,7 @@ const Giveaways = () => {
             </div>
             <div
               onClick={() => setBorder("completed")}
-              className={`w-[164px] text-[14px] cursor-pointer border-solid ${
+              className={`w-[164px] text-[14px] cursor-pointer border-solid font-bold ${
                 border === "completed" && "border-b-[#e00b7c] text-[#e00b7c] border-b-[1px]"
               }  flex justify-center pb-[17px]`}
             >

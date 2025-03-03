@@ -77,7 +77,7 @@ const Blockchain = () => {
         <p className="w-full flex font-Space_Grotesk text-[70px] text-text_color mb-[34px] uppercase  leading-tight tracking-tight">
         future of digital giveaways, powered by BLOCKCHAIN
         </p>
-        <p className="w-full flex font-poppins text-[28px] text-text_color leading-tight tracking-tight">
+        <p className="w-full flex font-poppins font-bold text-[28px] text-text_color leading-tight tracking-tight">
         $VICE is revolutionizing the giveaway ecosystem by leveraging blockchain technology for full transparency, fairness, and security. 
         </p>
       </div>

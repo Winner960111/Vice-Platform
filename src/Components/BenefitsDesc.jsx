@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Descriptioncmp = ({ header, text }) => {
   return (
     <div className="flex flex-col items-center md:w-[30%] w-[80%]">
-      <div className="text-[30px] leading-tight">{header}</div>
+      <div className="text-[30px] leading-tight font-bold">{header}</div>
       <div className="font-poppins leading-normal text-[14px] mt-[31px] text-center">
         {text}
       </div>
@@ -50,7 +50,7 @@ const BenefitsDesc = () => {
           <p className="text-[48px] font-Space_Grotesk text-center">
             WHY $VICE
           </p>
-          <div className="w-full flex flex-col md:flex-row items-center justify-start mt-[80px] md:gap-[10%] gap-[50px] px-[123px]">
+          <div className="w-full flex flex-col md:flex-row items-start justify-center mt-[80px] md:gap-[10%] gap-[50px] px-[123px]">
             {contents?.map((content, index) => {
               return (
                 <Descriptioncmp

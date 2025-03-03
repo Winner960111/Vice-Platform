@@ -30,7 +30,7 @@ const Header = () => {
             <img src='Brand.png' className="brand absolute w-[524px]" />
             <div className="absolute bg-black w-full h-[629.74px] opacity-40"></div>
             <div className="w-full absolute flex flex-col justify-center items-center">
-                <p className='text-center uppercase font-Space_Grotesk text-[70px]'>Trustless. Decentralized. Transparent.</p>
+                <p className='w-[90%] text-center uppercase font-Space_Grotesk text-[70px]'>Trustless. Decentralized. Transparent.</p>
                 <p className="w-full uppercase font-Space_Grotesk text-[30px] text-center mb-5">$vice/usdt NOW TRADING ON GATE.IO AND MEXC</p>
                 <CustomButton text="Trade now" />
             </div>
