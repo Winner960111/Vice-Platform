@@ -90,7 +90,7 @@ export default function Footer() {
                   href="#"
                   className="block text-text_color/70 hover:text-text_color"
                 >
-                  How it Works
+                  Audit
                 </a>
                 
               </div>

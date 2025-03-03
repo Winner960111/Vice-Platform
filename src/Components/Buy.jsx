@@ -24,11 +24,11 @@ const Buy = () => {
       <img src="Bull.png" alt="bull" className="absolute top-0 right-0" />
       <div className="w-full flex flex-col items-center justify-center text-text_color tracking-tight leading-tight mt-72 mb-16 z-10">
         <p className="w-[50%] text-[70px] font-Space_Grotesk text-center uppercase">
-          BUY LOW, SELL HIGH, Proof in Numbers
+        Launch Your Own Web3 Giveaway
         </p>
         <p className="w-[50%] text-[28px] mt-8 text-center pb-10">
-          Driving decentralized innovation by incentivizing web3 pioneers to
-          build. Visionary leaders on the blockchain.
+        Whether you&apos;re a content creator, or brand looking to engage the crypto audience, $VICE provides a trustless way to reward your community.
+
         </p>
         <a
           href="https://www.mexc.com/exchange/VICE_USDT?_from=search"

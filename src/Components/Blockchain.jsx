@@ -74,12 +74,11 @@ const Blockchain = () => {
         </Carousel>
       </div>
       <div className="flex flex-col justify-center items-center px-10 md:px-36">
-        <p className="w-full flex font-Space_Grotesk text-[70px] text-text_color mt-[120px] mb-[34px] uppercase  leading-tight tracking-tight">
-          future of digital giveaways, powered by BLOCKCHAIN
+        <p className="w-full flex font-Space_Grotesk text-[70px] text-text_color mb-[34px] uppercase  leading-tight tracking-tight">
+        future of digital giveaways, powered by BLOCKCHAIN
         </p>
-        <p className="w-full flex font-poppins text-[28px] text-text_color mb-[160px]  leading-tight tracking-tight">
-          $VICE is revolutionizing the crypto ecosystem by leveraging blockchain
-          technology for full transparency and security. Bull run energy.
+        <p className="w-full flex font-poppins text-[28px] text-text_color leading-tight tracking-tight">
+        $VICE is revolutionizing the giveaway ecosystem by leveraging blockchain technology for full transparency, fairness, and security. 
         </p>
       </div>
     </div>

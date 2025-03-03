@@ -53,7 +53,7 @@ const Giveaways = () => {
               onClick={() => setBorder("upcoming")}
               className={`w-[164px] text-[14px] cursor-pointer ${
                 border === "upcoming" && "border-b-[#e00b7c] text-[#e00b7c] border-b-[1px]"
-              }  border-solid flex justify-center pb-[34px]`}
+              }  border-solid flex justify-center pb-[17px]`}
             >
               Upcoming
             </div>
@@ -61,13 +61,13 @@ const Giveaways = () => {
               onClick={() => setBorder("completed")}
               className={`w-[164px] text-[14px] cursor-pointer border-solid ${
                 border === "completed" && "border-b-[#e00b7c] text-[#e00b7c] border-b-[1px]"
-              }  flex justify-center pb-[34px]`}
+              }  flex justify-center pb-[17px]`}
             >
               Completed
             </div>
           </div>
         {border === "upcoming" ? (
-         <div className="py-[24px]">
+         <div className="">
           {items.map((item, index) => (
             <div key={index} className="w-full rounded-[20px] mb-[8px] bg-[#202020]">
                 <div className="pl-[14px] pt-[12px] pb-[5px] pr-[40px] flex items-center sm:flex-row flex-col">
@@ -101,7 +101,7 @@ const Giveaways = () => {
             </div>
           ))}
         </div>):(
-          <div className="py-[32px]">
+          <div className="">
             <div className="title flex items-center text-[#B9B9B9] text-[14px] px-[34px] gap-[8%] font-poppins min-w-[1000px]">
               <p className="w-10">Year</p>
               <p className="w-96">Address</p>

@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const Descriptioncmp = ({ header, text }) => {
   return (
-    <div className="flex flex-col items-start md:w-[30%] w-[80%]">
+    <div className="flex flex-col items-center md:w-[30%] w-[80%]">
       <div className="text-[30px] leading-tight">{header}</div>
-      <div className="font-poppins leading-normal text-[14px] mt-[31px]">
+      <div className="font-poppins leading-normal text-[14px] mt-[31px] text-center">
         {text}
       </div>
     </div>
