@@ -86,7 +86,7 @@ const Header = () => {
             </p>
             <CustomButton text="Trade now" />
           </div>
-          <img src="Brand.png" className="w-[524px]" />
+          <img src="Brand.png" className="w-[397px]" />
         </div>
       </div>
     </div>
