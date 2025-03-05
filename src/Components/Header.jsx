@@ -77,7 +77,7 @@ const Header = () => {
         <Squares />
         <div className="absolute bg-black w-full h-[629.74px] opacity-40"></div>
         <div className="w-full flex lg:flex-row flex-col absolute px-[79px]">
-          <div className="w-full flex flex-col justify-center items-left">
+          <div className="w-full flex flex-col justify-center items-left max-w-[970px]">
             <p className="w-full uppercase font-Space_Grotesk text-[70px] leading-tight tracking-tight">
               future of digital giveaways, powered by BLOCKCHAIN
             </p>
