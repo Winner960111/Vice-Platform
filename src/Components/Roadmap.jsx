@@ -61,40 +61,43 @@ export default function Roadmap() {
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
-      <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mb-28">VICE ROADMAP</h1>
-      <div className="w-full flex justify-around items-center flex-wrap pb-[60px]">
-        {phases.map((phase, idx) => (
-          <div key={idx} className={`relative p-1 rounded-[20px] ${activePhase === phase.id ? "bg-back_color" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
-            <div
-              // key={phase.id}
-              onMouseEnter={() => setActivePhase(phase.id)}
-              className={`rounded-[20px] pl-6 pr-3 pt-8 h-[465px] w-[345px] cursor-pointer transition-all duration-300 flex flex-col items-stretch 
-                ${activePhase === phase.id ? "card-background" : "bg-back_color" }`} >
-                <div className="text-center">
-                  <h2 className="text-[32px] font-bold text-text_color mt-10">{phase.title}</h2>
-                  <p className="text-gray-400 text-[14px]">{phase.date}</p>
-                </div>
-                <div className="border-[#FFFFFF] border-b-[0.5px] border-solid mt-4 mx-4"></div>
-                <div className="flex-grow mt-12">
-                  <ul className="flex flex-col justify-between gap-y-2">
-                    {phase.items.map((item, index) => (
-                      <li key={index} className="flex items-start text-text_color">
-                        <span className="text-[12px]">
-                          <FaCircleCheck className={`${activePhase === phase.id ? "text-[#E00B7C]" : "text-[#1552F0]"} text-[12px]`}/>
-                        </span>
-                        <span className="text-[12px] ml-2 -mt-1">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <div className="w-full flex flex-col items-center max-w-[1600px]">
 
-      <a href="https://www.mexc.com/exchange/VICE_USDT?_from=search" target="_blank" className="">
-      <CustomButton text="Trade now" />
-      </a>
+        <h1 className="text-center font-Space_Grotesk text-[48px] text-text_color mb-28">VICE ROADMAP</h1>
+        <div className="w-full flex justify-around items-center flex-wrap pb-[60px]">
+          {phases.map((phase, idx) => (
+            <div key={idx} className={`relative p-1 rounded-[20px] ${activePhase === phase.id ? "bg-back_color" : "bg-gradient-to-r from-[#55A5EE] to-[#E00B7C]"} `}>
+              <div
+                // key={phase.id}
+                onMouseEnter={() => setActivePhase(phase.id)}
+                className={`rounded-[20px] pl-6 pr-3 pt-8 h-[465px] w-[345px] cursor-pointer transition-all duration-300 flex flex-col items-stretch 
+                  ${activePhase === phase.id ? "card-background" : "bg-back_color" }`} >
+                  <div className="text-center">
+                    <h2 className="text-[32px] font-bold text-text_color mt-10">{phase.title}</h2>
+                    <p className="text-gray-400 text-[14px]">{phase.date}</p>
+                  </div>
+                  <div className="border-[#FFFFFF] border-b-[0.5px] border-solid mt-4 mx-4"></div>
+                  <div className="flex-grow mt-12">
+                    <ul className="flex flex-col justify-between gap-y-2">
+                      {phase.items.map((item, index) => (
+                        <li key={index} className="flex items-start text-text_color">
+                          <span className="text-[12px]">
+                            <FaCircleCheck className={`${activePhase === phase.id ? "text-[#E00B7C]" : "text-[#1552F0]"} text-[12px]`}/>
+                          </span>
+                          <span className="text-[12px] ml-2 -mt-1">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <a href="https://www.mexc.com/exchange/VICE_USDT?_from=search" target="_blank" className="">
+        <CustomButton text="Trade now" />
+        </a>
+      </div>
     </div>
   )
 }

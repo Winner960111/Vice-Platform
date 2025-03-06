@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-back_color w-full text-text_color px-[100px] py-24">
-      <div className="mx-auto">
+    <footer className="bg-back_color w-full text-text_color px-[100px] py-24 flex justify-center">
+      <div className="w-full mx-auto max-w-[1600px]">
         <div className="flex flex-col justify-between items-start md:grid-cols-2 lg:grid-cols-12 gap-8 mb-12">
           {/* Logo */}
           <div className="lg:col-span-4 min-w-[110px] w-[110px]">

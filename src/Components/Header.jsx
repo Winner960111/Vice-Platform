@@ -6,8 +6,8 @@ const Header = () => {
   const [status, setStatus] = useState(0);
 
   return (
-    <div className="relative w-full flex flex-col text-text_color">
-      <div className="head w-full flex justify-between items-center pt-4 sticky top-0 z-50 bg-back_color">
+    <div className="relative flex items-center w-full flex-col text-text_color bg-back_color">
+      <div className="head w-full max-w-[1600px] flex justify-between items-center pt-4 sticky top-0 z-50">
         <a href="#">
           <img
             src="VICE_White 2.png"
@@ -76,17 +76,17 @@ const Header = () => {
       <div className="w-full h-[629.74px] relative flex justify-center items-center">
         <Squares />
         <div className="absolute bg-black w-full h-[629.74px] opacity-40"></div>
-        <div className="w-full flex lg:flex-row flex-col absolute px-[79px]">
-          <div className="w-full flex flex-col justify-center items-left max-w-[970px]">
+        <div className="w-full max-w-[1600px] flex lg:flex-row flex-col absolute">
+          <div className="w-full flex flex-col justify-center items-left max-w-[970px] ml-[150px]">
             <p className="w-full uppercase font-Space_Grotesk text-[70px] leading-tight tracking-tight">
-              future of digital giveaways, powered by BLOCKCHAIN
+              future of digital giveaways, powered<br/> by BLOCKCHAIN
             </p>
             <p className="w-full uppercase font-Space_Grotesk text-[30px] mb-5">
               $vice/usdt NOW TRADING ON GATE.IO AND MEXC
             </p>
             <CustomButton text="Trade now" />
           </div>
-          <img src="Brand.png" className="w-[397px]" />
+          <img src="Brand.png" className="w-[397px] h-[397px] mr-[75px]" />
         </div>
       </div>
     </div>

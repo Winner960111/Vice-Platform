@@ -20,7 +20,7 @@ const Video = () => {
             <video
                 width="1081"
                 height="534"
-                className="rounded-[20px] cursor-pointer"
+                className="rounded-[20px] cursor-pointer  max-w-[1600px]"
                 ref={videoRef}
                 src="sample.mp4"
                 onMouseEnter={handleMouseEnter}

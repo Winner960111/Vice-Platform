@@ -46,28 +46,30 @@ const BenefitsDesc = () => {
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
         </div>
-        <div className="w-full flex flex-col text-text_color pt-[300px]">
-          <p className="text-[48px] font-Space_Grotesk text-center">
-            WHY $VICE
-          </p>
-          <div className="w-full flex flex-col md:flex-row items-start justify-center mt-[80px] md:gap-[10%] gap-[50px] px-[123px]">
-            {contents?.map((content, index) => {
-              return (
-                <Descriptioncmp
-                  key={index}
-                  header={content.header}
-                  text={content.text}
-                />
-              );
-            })}
-          </div>
-          <div className="py-[40px] flex justify-center bg-back_color">
-            <a
-              href="https://vice-io.gitbook.io/vice.io-docs/introduction/market-overview"
-              target="_blank"
-            >
-              <CustomButton text="Learn more" />
-            </a>
+        <div className="flex justify-center">
+          <div className="w-full max-w-[1600px] flex flex-col text-text_color pt-[300px]">
+            <p className="text-[48px] font-Space_Grotesk text-center">
+              WHY $VICE
+            </p>
+            <div className="w-full flex flex-col md:flex-row items-start justify-center mt-[80px] md:gap-[10%] gap-[50px] px-[123px]">
+              {contents?.map((content, index) => {
+                return (
+                  <Descriptioncmp
+                    key={index}
+                    header={content.header}
+                    text={content.text}
+                  />
+                );
+              })}
+            </div>
+            <div className="py-[40px] flex justify-center bg-back_color">
+              <a
+                href="https://vice-io.gitbook.io/vice.io-docs/introduction/market-overview"
+                target="_blank"
+              >
+                <CustomButton text="Learn more" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

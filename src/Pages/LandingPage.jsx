@@ -5,7 +5,7 @@ import Roadmap from "../Components/Roadmap.jsx";
 import Blockchain from "../Components/Blockchain.jsx";
 import Video from "../Components/Video.jsx";
 import DiamondHands from "../Components/DiamondHands.jsx";
-import BenefitsDesc from "../Components/BenefitsDesc.jsx"
+import BenefitsDesc from "../Components/BenefitsDesc.jsx";
 import How from "../Components/How.jsx";
 import Giveaways from "../Components/Giveaways.jsx";
 import Buy from "../Components/Buy.jsx";
@@ -14,20 +14,23 @@ import Visionaries from "../Components/Visionaries.jsx";
 const LandingPage = () => {
   return (
     <div className="w-full flex justify-center">
-    <div className="relative w-full bg-center bg-cover bg-no-repeat bg-fixed  max-w-[1600px]" style={{ backgroundImage: "url('/bg.png')" }}>
-        <Header/>
+      <div
+        className="relative flex justify-center flex-col w-full bg-center bg-cover bg-no-repeat bg-fixed"
+        style={{ backgroundImage: "url('/bg.png')" }}
+      >
+        <Header />
         <Blockchain />
-        <Video/>
+        <Video />
         <DiamondHands />
         <BenefitsDesc />
         <How />
         <Giveaways />
-        <Roadmap/>
-        <Buy/>
+        <Roadmap />
+        <Buy />
         <Visionaries />
-        <HeroSection/>
-        <Footer/>
-    </div>
+        <HeroSection />
+        <Footer />
+      </div>
     </div>
   );
 };

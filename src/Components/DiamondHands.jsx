@@ -7,8 +7,8 @@ const DiamondHands = () => {
   };
 
   return (
-    <div className="diamond-hands-container w-full mt-36 ">
-      <div className="w-full flex flex-col lg:flex-row relative justify-center items-center pl-5 pr-36 gap-24">
+    <div className="diamond-hands-container flex justify-center w-full mt-36 ">
+      <div className="w-full  max-w-[1600px] flex flex-col lg:flex-row relative justify-center items-center pl-5 pr-36 gap-24 ">
         <img
           src="dispersionglass.png"
           className=" animate-float hover:animate-float_slow w-[600px] p-10 cursor-pointer"
@@ -16,7 +16,7 @@ const DiamondHands = () => {
         />
         <div className="w-[600px] flex flex-col text-text_color leading-tight xl:-mt-36">
           <p className="text-[48px] uppercase font-Space_Grotesk">
-            Diamond Hands, Digital wealth
+            Diamond Hands,<br/> Digital wealth
           </p>
           <p className="text-[28px] font-poppins mt-[26px] mb-[40px] tracking-tight">
             Transforming the crypto market with high-value prizes like

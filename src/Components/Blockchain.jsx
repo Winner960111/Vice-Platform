@@ -43,7 +43,7 @@ const Blockchain = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center">
-      <div className="w-full my-[52px] px-20 flex flex-wrap items-center justify-center">
+      <div className="w-full my-[52px] px-20 flex flex-wrap items-center justify-center  max-w-[1600px]">
         <Carousel
           responsive={responsive}
           dotListClass="custom-dot-list-style"
@@ -73,12 +73,12 @@ const Blockchain = () => {
           <TokenSlide href="#" logoSrc="logo5.png" />
         </Carousel>
       </div>
-      <div className="flex flex-col justify-center items-center px-10 md:px-36">
+      <div className="flex flex-col justify-center items-center px-10 md:px-36  max-w-[1600px]">
         <p className="w-full flex font-Space_Grotesk text-[70px] text-text_color mb-[34px] uppercase  leading-tight tracking-tight">
-        future of digital giveaways, powered by BLOCKCHAIN
+        Trustless. Decentralized. Transparent.
         </p>
         <p className="w-full flex font-poppins font-bold text-[28px] text-text_color leading-tight tracking-tight">
-        $VICE is revolutionizing the giveaway ecosystem by leveraging blockchain technology for full transparency, fairness, and security. 
+        $VICE is revolutionizing the giveaway ecosystem<br/> by leveraging blockchain technology for full<br/> transparency, fairness, and security. 
         </p>
       </div>
     </div>
